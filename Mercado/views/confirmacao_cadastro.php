@@ -10,7 +10,7 @@ include '../db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Confirmação de Cadastro</title>
     <link rel="stylesheet" href="../style.css">
-    <meta http-equiv="refresh" content="2;url=teste2.php">
+    <meta http-equiv="refresh" content="2;url=../index.php?pagina=teste2">
   </head>
 
 <div class="top-bar">

@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Jonirã Supermercados</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
   <div class="header">
     <img src="joniralogo.png" alt="Jonirã Supermercados" width="50px">
@@ -38,4 +31,3 @@
     </div>
   </div>
 </body>
-</html>

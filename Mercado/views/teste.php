@@ -1,20 +1,3 @@
-<?php 
-include 'header.php'; 
-include 'db.php'; 
-
-// Consulta os produtos do banco, se desejar carregar dinamicamente
-$query = "SELECT * FROM produto";
-$resultado = mysqli_query($conexao, $query);
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Jonira Supermercados - Cadastrar Produtos</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
 <!-- TOPO -->
 <div class="top-bar">
@@ -47,6 +30,4 @@ $resultado = mysqli_query($conexao, $query);
         <a href="views/confirmacao_cadastro.php" class="botao">Tabela de produtos</a>
     </div>    
 </body>
-</html>
 
-<?php include 'footer.php'; ?>
