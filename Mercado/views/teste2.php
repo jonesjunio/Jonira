@@ -1,10 +1,5 @@
-<?php 
-include '../header.php';
-include '../db.php';
-
-$query = "SELECT * FROM produto";
-$consulta_produto = mysqli_query($conexao, $query);
-$produto = ($consulta_produto);
+<?php
+ include '../db.php'
 ?>
 
 <head>
@@ -30,18 +25,19 @@ $produto = ($consulta_produto);
             <th>Descrição</th>
             <th>Código</th>
             <th>Deletar</th>
+            <th>Editar</th>
         </tr>
     </thead>
     <tbody>
     <?php
-        while($linha = mysqli_fetch_array($produto)){
+        while($linha = mysqli_fetch_array($consulta_produto)){
             echo'<tr>';
                 echo'<td>'.$linha['nm_prod'].'</td>';
                 echo'<td>'.$linha['valor_prod'].'</td>';
                 echo'<td>'.$linha['desc_prod'].'</td>';
                 echo'<td>'.$linha['cd_prod'].'</td>';
-                echo '<td> <a href="../deleta_aluno.php?prod='.$linha['cd_prod'].'">Deletar</a> </td>
-				</tr>';
+                echo '<td> <a href="../deleta_prod.php?prod='.$linha['cd_prod'].'">Deletar</a> </td>';
+                echo '<td><a href="../edita_prod.php?prod='.$linha['cd_prod'].'">Editar</a></td>';
             echo'</tr>';
         }
         ?>
@@ -49,5 +45,5 @@ $produto = ($consulta_produto);
 </table>
 
 <?php 
-include '../footer.php';
 ?>
+
